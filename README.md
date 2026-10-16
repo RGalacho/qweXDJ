@@ -10,7 +10,7 @@ QweXDJ is a desktop application that leverages AI to analyze your local music li
 
 - **Natural Language Processing**: Generate playlists using simple English prompts ("Create a playlist for working focus music", "Songs for a rainy walk")
 - **Local Audio Collection Analysis**: Automatically scans and indexes your local music library
-- **AI-Driven Playlist Generation**: Uses tinyLlama model via transformers for intelligent track selection
+- **AI-Driven Playlist Generation**: Uses Qwen-2.5 model via transformers for intelligent track selection
 - **Semantic Search**: Leverages ChromaDB to find relevant tracks based on prompt context
 - **Audio Feature Extraction**: Analyzes BPM and tonal information using librosa
 - **MusicBrainz Integration**: Retrieves enriched metadata from MusicBrainz
@@ -140,3 +140,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - [ChromaDB](https://github.com/chroma-core/chroma) for semantic search
 - [librosa](https://github.com/librosa/librosa) for audio analysis
 - [MusicBrainz](https://musicbrainz.org/) for metadata retrieval
+
