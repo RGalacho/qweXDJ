@@ -21,7 +21,7 @@ class AIModelConfig:
 @dataclass(frozen=True)
 class ChromaDBConfig:
     """Configuration for Chroma DB usage"""
-    collection_path: str = "/home/rgalacho/Música"
+    collection_path: str = "/home/user/Music"
     db_path:         str = "./chroma_data"
     db_name:         str = "audio_collection"
 
