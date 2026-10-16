@@ -1,0 +1,31 @@
+# Local Pi runtime state
+.atl/
+.pi/
+
+/playlists/*
+/chroma_data/*
+plan.org
+
+# Python/Poetry
+*.pyc
+
+# Packages
+/dist/*
+
+# Unit test / coverage reports
+.coverage
+.pytest_cache
+
+.DS_Store
+.idea/*
+.python-version
+.vscode/*
+
+/docs/site/*
+.mypy_cache
+
+.venv
+.venv_poetry/
+/poetry.toml
+/requirements.txt
+

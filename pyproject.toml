@@ -1,0 +1,58 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[project]
+name = "tinydj"
+version = "0.1.0"
+description = "Local Playlist Generation System"
+readme = "README.md"
+authors = [
+    {name = "R. Galacho", email = "rgalacho@gmail.com"},
+]
+license = {text = "GPL-3.0"}
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Programming Language :: Python :: 3",
+    "Operating System :: Ubuntu Budgie",
+]
+
+[tool.poetry]
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+torch=">=2.0.0"
+librosa=">=0.10.2"
+ctransformers=">=0.2.0"
+fastapi=">=0.100.0"
+uvicorn=">=0.23.0"
+sqlalchemy=">=2.0.0"
+python-multipart=">=0.0.6"
+click=">=8.0.0"
+numpy=">=1.24.0"
+sentencepiece = ">=0.2.1"
+transformers = ">=4.3.5"
+chromadb = "^1.5.9"
+mutagen = "^1.48.1"
+flask = {version = ">=3.1.0", extras = ["async"]}
+onnxruntime = ">=1.17.0"
+onnxruntime-gpu = ">=1.17.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+
+[project.urls]
+Homepage = "https://github.com/tinydj"
+Repository = "https://github.com/tinydj.git"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["tinydj*"]
+
+[tool.setuptools.package-data]
+tinydj = [
+    "src/*",
+]
