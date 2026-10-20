@@ -3,7 +3,7 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [project]
-name = "tinydj"
+name = "qweXDJ"
 version = "0.1.0"
 description = "Local Playlist Generation System"
 readme = "README.md"
@@ -45,12 +45,12 @@ onnxruntime-gpu = ">=1.17.0"
 pytest = "^8.3.3"
 
 [project.urls]
-Homepage = "https://github.com/tinydj"
-Repository = "https://github.com/tinydj.git"
+Homepage = "https://github.com/RGalacho/qweXDJ"
+Repository = "https://github.com/RGalacho/qweXDJ"
 
 [tool.setuptools.packages.find]
 where = ["."]
-include = ["tinydj*"]
+include = ["app*"]
 
 [tool.setuptools.package-data]
 tinydj = [
