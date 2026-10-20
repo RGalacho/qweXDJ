@@ -33,7 +33,9 @@ cd qweXDJ
 
 2. Install Python dependencies:
 ```bash
-pip install -r requirements.txt
+python3 -m venv .venv_poetry
+.venv_poetry/bin/python -m pip install poetry
+poetry install
 ```
 
 3. Download Qwen2.5 model (https://huggingface.co/Qwen/Qwen2.5-7B-Instruct):
@@ -45,7 +47,7 @@ hf download "Qwen/Qwen2.5-7B-Instruct" --local-dir ./qwen2.5-7B-Instruct
 
 1. Create a local audio collection directory:
 ```bash
-mkdir ~/Music/qwexDJcollection
+mkdir ~/Music
 ```
 
 2. Place your audio files in the collection directory (supporting MP3, FLAC, WAV, M4A, OGG formats)
@@ -57,14 +59,9 @@ class ChromaDBConfig:
     collection_path: str = "/home/user/Music"
 ```
 
-## Build
-```commandline
-poetry build
-```
-
 ## Run Flask app
 ```commandline
-poetry run flask --app app/qweXDJ.py run &
+poetry run python app/qweXDJ.py
 ```
 
 ## Usage
@@ -140,4 +137,3 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - [ChromaDB](https://github.com/chroma-core/chroma) for semantic search
 - [librosa](https://github.com/librosa/librosa) for audio analysis
 - [MusicBrainz](https://musicbrainz.org/) for metadata retrieval
-
