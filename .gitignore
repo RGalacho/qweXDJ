@@ -28,4 +28,5 @@ plan.org
 .venv_poetry/
 /poetry.toml
 /requirements.txt
+/qwen2.5-3B-Instruct
 
